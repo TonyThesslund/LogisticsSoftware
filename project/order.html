@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/orderpage.js"></script>
+</head>
+<script>
+    buildProductTable()
+    buildInfoTable()
+    getPDF()
+    loadComment()
+</script>
+
+<body>
+    <div id="element">
+        <div id = "orderTop">
+            <table class = "orderinfo">
+                <tbody id ="infoTable">
+
+                </tbody>
+            </table>
+            <img src="media/pdf-download.png" onclick=getPDF() id="pdfButton" data-html2canvas-ignore="true">
+            
+        </div>           
+        <div id = "orderBot">
+            <table class="table table-striped">
+                <tr class="bg-info" id="bg">
+                    <th style="width:121px">Code</th>
+                    <th style="width:91px">Supplier Code</th>
+                    <th style="width:500px">Product</th>
+                    <th style="width:850px">Description</th>
+                    <th>Shelf Position</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tbody id = "productTable">
+
+                </tbody>
+            </table>
+
+        <button data-html2canvas-ignore="true" id="confirmButton">Confirm collected items</button>    
+    </div>
+
+        <h3>Comment by customer:</h3>
+        <div id="customerComment">
+        </div>
+        <br>
+
+        <h3>Comment by collector:</h3>
+        <div id="collectorComment">       
+        </div>
+   
+    <div id="addComment" data-html2canvas-ignore="true">
+            <h3>Add Comment:</h3>
+            <textarea id="commentField"></textarea>
+            <button>submit</button>
+    </div>
+
+</body>
+</html>

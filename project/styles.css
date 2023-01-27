@@ -1,0 +1,210 @@
+/******************* GLOBAL SETTINGS *******************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*, * + * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/******************* SETTINGS FOR INDEX.HTML ( MAIN PAGE ) *******************/
+
+header {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#main {
+    display: flex;
+}
+
+#sec {
+    margin-left: 3em;
+}
+
+#searchBox {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: cornflowerblue;
+}
+
+#newOrderBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: rgb(62, 128, 71);
+}
+
+.s1 {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    border: #9ABAD9 solid 3px;
+}
+
+.s2 {
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    border: #9dff9d solid 3px;
+}
+
+h2 {
+    color: white;
+}
+
+.sortButton:hover {
+    cursor: pointer;
+    background: #9ABAD9;
+}
+
+.orderLink {
+	border-radius:13px;
+	cursor:pointer;
+	padding:7px 20px;
+	text-decoration:none;
+    border: none;
+
+}
+
+.orderLink:hover {
+    background-color: #9ABAD9;
+}
+
+#logout {
+    border: none;
+    background-color:#bd4242;
+	border-radius:27px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:8px 31px;
+	text-decoration:none;
+}
+#logout:hover {
+	background-color:#bf542a;}
+
+
+
+
+
+
+/******************* TABLE SETTINGS *******************/
+
+#bg{
+    background-color: cornflowerblue;
+}
+
+.bg-info {
+    background-color: cornflowerblue;
+    text-align: left;
+}
+
+th, td{
+    padding: 5px;
+}
+
+
+
+
+
+/******************* ORDER PAGE SETTINGS *******************/
+
+#element {
+    padding: 0.5em;
+}
+
+.orderinfo tr th {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+#orderTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pdfButton {
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+
+#pdfButton:hover {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+}
+
+#commentField {
+    width:300px;
+    height: 75px;
+}
+
+input [type="number"] {
+    width: 35px;
+}
+
+#confirmButton {
+    float:right;
+    margin-top: 10px;
+}
+
+#collectorComment {
+    margin-top: 1em;
+}
+
+#addComment {
+    margin-top: 5em;
+}
+
+
+
+/******************* LOGIN PAGE SETTINGS *******************/
+
+#loginForm {
+    top: 10%;
+    left: 43%;
+    position: absolute;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;       
+    background-color: cornflowerblue;
+    padding: 1em;
+    width: 170px;
+}
+
+#username, #password {
+    margin-bottom: 1em;
+    width: 130px;
+    align-self: center;
+}
+
+#loginButton {
+    height: 25px;
+    width: 60px;
+    align-self: center;
+}
